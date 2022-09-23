@@ -9,20 +9,21 @@ html body{
   background-color: #222222;
 }
 
-
+  
 @media only screen and (max-width:799px) { 
-    .figma-pro {
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHS6fW493CfQKtGQq30eLbT%2FPortfolio-2022%3Fpage-id%3D139%253A610%26node-id%3D140%253A611%26viewport%3D211%252C276%252C0.3%26scaling%3Dmin-zoom%26starting-point-node-id%3D140%253A611%26show-proto-sidebar%3D1" allowfullscreen></iframe>
-    }
+.figma-pro{
+  width: 100vw;
+}
 }
 
 @media only screen and (min-width:800px) and (max-width:1199px) { 
-    .figma-pro {
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHS6fW493CfQKtGQq30eLbT%2FPortfolio-2022%3Fpage-id%3D139%253A610%26node-id%3D140%253A612%26viewport%3D211%252C276%252C0.3%26scaling%3Dmin-zoom%26starting-point-node-id%3D140%253A612%26show-proto-sidebar%3D1" allowfullscreen></iframe>
-    }
+  .figma-pro{
+    width: 800px;
+  }
 }
+
 @media only screen and (min-width:1200px) { 
   .figma-pro{
-     <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FHS6fW493CfQKtGQq30eLbT%2FPortfolio-2022%3Fpage-id%3D139%253A610%26node-id%3D140%253A613%26viewport%3D211%252C276%252C0.3%26scaling%3Dmin-zoom%26starting-point-node-id%3D140%253A613%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+    width: 1200px;
   }
-  }
+}
