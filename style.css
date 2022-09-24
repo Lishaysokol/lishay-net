@@ -1,5 +1,4 @@
-
-  html{
+html{
     font-family: 'Inter Tight', sans-serif;
     font-style: normal;
   }
@@ -84,23 +83,30 @@ h3{
   
   }
 
-
-  
 @media only screen and (max-width:799px) { 
-.figma-pro{
-  width: 100vw;
-  height: 100vh;
-}
-}
-
-@media only screen and (min-width:800px) and (max-width:1919px) { 
+  :root{
+    --figma-frame-width: 100vw;
+  }
   .figma-pro{
     width: 100vw;
     height: 100vh;
   }
 }
 
-@media only screen and (min-width:1920px) { 
+@media only screen and (min-width:800px) and (max-width:1919px) { 
+  :root{
+    --figma-frame-width: 800px;
+  }
+  .figma-pro{
+    width: 800px;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width:100vw) { 
+  :root{
+    --figma-frame-width: 100vw;
+  }
   .figma-pro{
     width: 1920px;
     height: 100vh;
