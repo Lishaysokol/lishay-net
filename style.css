@@ -2,7 +2,6 @@
   html{
     font-family: 'Inter Tight', sans-serif;
     font-style: normal;
-    background: radial-gradient(70.14% 69.04% at 50% 50%, rgba(133, 132, 226, 0) 32.29%, rgba(148, 254, 111, 0.19) 100%), #A3A2ED;
   }
 
 body { 
@@ -90,17 +89,20 @@ h3{
 @media only screen and (max-width:799px) { 
 .figma-pro{
   width: 100vw;
+  height: 100vh;
 }
 }
 
-@media only screen and (min-width:800px) and (max-width:1199px) { 
+@media only screen and (min-width:800px) and (max-width:1919px) { 
   .figma-pro{
-    width: 800px;
+    width: 100vw;
+    height: 100vh;
   }
 }
 
-@media only screen and (min-width:1200px) { 
+@media only screen and (min-width:1920px) { 
   .figma-pro{
-    width: 1200px;
+    width: 1920px;
+    height: 100vh;
   }
 }
