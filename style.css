@@ -24,6 +24,17 @@ i {
   margin: 0 auto;
 }
 
+h3{
+  font-family: 'Inter Tight', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 16px;
+  color: #545368;
+  text-decoration: underline 1px;
+  text-underline-offset: 4px;
+}
+
 @media only screen and (max-width:639px) { 
 
   .main-div{
