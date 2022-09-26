@@ -84,7 +84,7 @@ h3{
   }
 
 
-@media only screen and (max-width:727px) { 
+@media only screen and (max-width:727px) and (orientation: portrait) { 
 
   :root{
     --figma-frame-width: 100vw;
@@ -115,31 +115,7 @@ h3{
   }
 }
 
-/*
-
-@media only screen and (min-width:800px) and (max-width:1919px) { 
-  :root{
-    --figma-frame-width: 800px;
-  }
-  .figma-pro{
-    width: 800px;
-    height: 100vh;
-  }
-
-  .figma-pro.pro-desktop {
-    display:unset;
-    z-index:1;
-  }
-
-  .figma-pro.pro-mobile {
-    display:none;
-    z-index:-1;
-  }
-}
-
-*/
-
-@media only screen and (min-width:728px) { 
+@media only screen and (min-width:728px), screen and (orientation: landscape) { 
   :root{
     --figma-frame-width: 100vw;
   }
