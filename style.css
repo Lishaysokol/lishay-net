@@ -14,12 +14,12 @@ body {
   margin: 0;
 }
 
-i {
-  font-style: normal;
-}
-
 .main-div{
   margin: 0 auto;
+}
+
+i {
+  font-style: normal;
 }
 
 h3{
@@ -33,43 +33,20 @@ h3{
   text-underline-offset: 4px;
 }
 
-@media only screen and (max-width:639px) { 
+/* Homepage */
 
-  .main-div{
-    padding: 24px 32px 40px 32px;
-  }
-  
-  h1{
-    font-family: 'Inter Tight', sans-serif;
-    font-style:normal;
-    font-weight: 800;
-    line-height: 120%;
-    font-size: 18px;
-  }
-  
-  p{
-    font-family: 'Inter Tight', sans-serif;
-    font-style:normal;
-    font-weight: 400;
-    line-height: 150%;
-    font-size: 32px;
-    padding-bottom: 80px;
-  }
+  @media only screen and (max-width:639px) { 
 
-  }
-
-@media only screen and (min-width:640px) { 
-
-  .main-div{
-    padding: 32px 40px 64px 40px;
-  }
+    .main-div{
+      padding: 24px 32px 40px 32px;
+    }
     
     h1{
       font-family: 'Inter Tight', sans-serif;
       font-style:normal;
       font-weight: 800;
       line-height: 120%;
-      font-size: 24px;
+      font-size: 18px;
     }
     
     p{
@@ -77,60 +54,86 @@ h3{
       font-style:normal;
       font-weight: 400;
       line-height: 150%;
-      font-size: 36px;
-      padding-bottom: 40px;
+      font-size: 32px;
+      padding-bottom: 80px;
     }
-  
-  }
-
-
-@media only screen and (max-width:727px) and (orientation: portrait) { 
-
-  :root{
-    --figma-frame-width: 100vw;
-  }
-  .figma-pro{
-    width:100vw;
-    height:100vh;
-    min-height: 100vh;
-    min-height -webkit-fill-available   
 
   }
 
-  .figma-pro.pro-desktop {
-    display:none;
-    z-index:-1;
+  @media only screen and (min-width:640px) { 
+
+    .main-div{
+      padding: 32px 40px 64px 40px;
+    }
+      
+      h1{
+        font-family: 'Inter Tight', sans-serif;
+        font-style:normal;
+        font-weight: 800;
+        line-height: 120%;
+        font-size: 24px;
+      }
+      
+      p{
+        font-family: 'Inter Tight', sans-serif;
+        font-style:normal;
+        font-weight: 400;
+        line-height: 150%;
+        font-size: 36px;
+        padding-bottom: 40px;
+      }
+    
   }
 
-  .figma-pro.pro-mobile {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    display:unset;
-    z-index:1;
-  }
-}
+/* Portfolio */
 
-@media only screen and (min-width:728px), screen and (orientation: landscape) { 
-  :root{
-    --figma-frame-width: 100vw;
-  }
-  .figma-pro{
-    width: 1920px;
-    height: 100vh;
+  @media only screen and (max-width:959px) and (orientation: portrait) { 
+
+    :root{
+      --figma-frame-width: 100vw;
+    }
+    .figma-pro{
+      width:100vw;
+      height:100vh;
+      min-height: 100vh;
+      min-height -webkit-fill-available   
+
+    }
+
+    .figma-pro.pro-desktop {
+      display:none;
+      z-index:-1;
+    }
+
+    .figma-pro.pro-mobile {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      display:block;
+      z-index:1;
+    }
   }
 
-  .figma-pro.pro-desktop {
-    display:unset;
-    z-index:1;
-  }
+  @media only screen and (min-width:960px), screen and (orientation: landscape) { 
+    :root{
+      --figma-frame-width: 100vw;
+    }
+    .figma-pro{
+      width: 1920px;
+      height: 100vh;
+    }
 
-  .figma-pro.pro-mobile {
-    display:none;
-    z-index:-1;
+    .figma-pro.pro-desktop {
+      display:block;
+      z-index:1;
+    }
+
+    .figma-pro.pro-mobile {
+      display:none;
+      z-index:-1;
+    }
   }
-}
