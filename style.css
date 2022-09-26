@@ -83,7 +83,8 @@ h3{
   
   }
 
-@media only screen and (max-width:799px) { 
+@media only screen and (max-width:1023px) { 
+
   :root{
     --figma-frame-width: 100vw;
   }
@@ -91,7 +92,19 @@ h3{
     width: 100vw;
     height: 100vh;
   }
+
+  .figma-pro.pro-desktop {
+    display:none;
+    z-index:-1;
+  }
+
+  .figma-pro.pro-mobile {
+    display:unset;
+    z-index:1;
+  }
 }
+
+/*
 
 @media only screen and (min-width:800px) and (max-width:1919px) { 
   :root{
@@ -101,14 +114,36 @@ h3{
     width: 800px;
     height: 100vh;
   }
+
+  .figma-pro.pro-desktop {
+    display:unset;
+    z-index:1;
+  }
+
+  .figma-pro.pro-mobile {
+    display:none;
+    z-index:-1;
+  }
 }
 
-@media only screen and (min-width:100vw) { 
+*/
+
+@media only screen and (min-width:1024px) { 
   :root{
     --figma-frame-width: 100vw;
   }
   .figma-pro{
     width: 1920px;
     height: 100vh;
+  }
+
+  .figma-pro.pro-desktop {
+    display:unset;
+    z-index:1;
+  }
+
+  .figma-pro.pro-mobile {
+    display:none;
+    z-index:-1;
   }
 }
