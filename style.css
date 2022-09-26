@@ -84,7 +84,7 @@ h3{
   }
 
 
-@media only screen and (max-width:1023px) { 
+@media only screen and (max-width:727px) { 
 
   :root{
     --figma-frame-width: 100vw;
@@ -139,7 +139,7 @@ h3{
 
 */
 
-@media only screen and (min-width:1024px) { 
+@media only screen and (min-width:728px) { 
   :root{
     --figma-frame-width: 100vw;
   }
