@@ -6,12 +6,11 @@ html{
 body { 
   min-height: 100vh;
   display: flex;
-  /* Horizontal centering (main axis): */  
-  justify-content: center;  
-  /* Vertical centering (cross axis): */
-  align-items: center;
+  justify-content: center;     /* Horizontal centering (main axis): */  
+  align-items: center;   /* Vertical centering (cross axis): */
   padding: 0;
   margin: 0;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 .main-div{
@@ -118,13 +117,13 @@ h3{
     }
   }
 
-  @media only screen and (min-width:960px), screen and (orientation: landscape) { 
+  @media only screen and (min-width:960px), screen and (orientation: landscape) and (min-width:300px) { 
     :root{
       --figma-frame-width: 100vw;
     }
     .figma-pro{
-      width: 1920px;
-      height: 100vh;
+      min-width: 1800px;
+      min-height:100vh;
     }
 
     .figma-pro.pro-desktop {
@@ -137,3 +136,24 @@ h3{
       z-index:-1;
     }
   }
+
+  @media only screen and (min-width:1200px) { 
+    :root{
+      --figma-frame-width: 100vw;
+    }
+    .figma-pro{
+      min-width: 2040px;
+      min-height:100vh;
+    }
+  }
+
+  @media only screen and (min-width:1400px), screen and (orientation: landscape) and (min-width:1400px)  { 
+    :root{
+      --figma-frame-width: 100vw;
+    }
+    .figma-pro{
+      min-width: 2400px;
+      min-height:100vh;
+    }
+  }
+  
