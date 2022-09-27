@@ -10,7 +10,6 @@ body {
   align-items: center;   /* Vertical centering (cross axis): */
   padding: 0;
   margin: 0;
-  overflow: hidden; /* Hide scrollbars */
 }
 
 .main-div{
