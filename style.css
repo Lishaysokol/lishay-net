@@ -85,18 +85,18 @@ h3{
   }
 
 /* Portfolio */
-
-  @media only screen and (max-width:959px) and (orientation: portrait) { 
-
-    :root{
+    
+:root{
       --figma-frame-width: 100vw;
-    }
+}
+
+@media (hover: none) {
+
     .figma-pro{
       width:100vw;
       height:100vh;
       min-height: 100vh;
       min-height -webkit-fill-available   
-
     }
 
     .figma-pro.pro-desktop {
@@ -105,6 +105,8 @@ h3{
     }
 
     .figma-pro.pro-mobile {
+      display:block;
+      z-index:1;
       position: absolute;
       top: 0;
       left: 0;
@@ -112,17 +114,46 @@ h3{
       right: 0;
       width: 100%;
       height: 100%;
-      display:block;
-      z-index:1;
     }
+
   }
 
-  @media only screen and (min-width:960px), screen and (orientation: landscape) and (min-width:300px) { 
-    :root{
-      --figma-frame-width: 100vw;
-    }
+ @media (hover: none) and (orientation:landscape) {
+
     .figma-pro{
-      min-width: 1800px;
+      width:50vw;
+      max-width: 50vw;
+      height:100vh;
+      min-height: 100vh;
+      min-height -webkit-fill-available   
+    }
+
+    .figma-pro.pro-desktop {
+      display:none;
+      z-index:-1;
+    }
+
+    .figma-pro.pro-mobile {
+      display:block;
+      z-index:1;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      
+    }
+
+  }
+ 
+
+@media (hover:hover) {
+
+    .figma-pro{
+      min-width: 1560px;
       min-height:100vh;
     }
 
@@ -137,23 +168,27 @@ h3{
     }
   }
 
-  @media only screen and (min-width:1200px) { 
-    :root{
-      --figma-frame-width: 100vw;
+  @media only screen and (min-width: 1024px) and (hover:hover) { 
+
+    .figma-pro{
+      min-width: 1800px;
+      min-height:100vh;
     }
+  }  
+
+@media only screen and (min-width: 1440px) and (hover:hover) { 
+
     .figma-pro{
       min-width: 2040px;
       min-height:100vh;
     }
   }
 
-  @media only screen and (min-width:1400px), screen and (orientation: landscape) and (min-width:1400px)  { 
-    :root{
-      --figma-frame-width: 100vw;
-    }
+@media only screen and (min-width:1920px) and (hover:hover) { 
+
     .figma-pro{
       min-width: 2400px;
       min-height:100vh;
     }
+
   }
-  
