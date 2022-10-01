@@ -175,7 +175,7 @@ h3{
     }
   }  
 
-  @media only screen and (min-width: 1280px) and (hover:hover) { 
+  @media only screen and (min-width: 1080px) and (hover:hover) { 
 
     .figma-pro{
       min-width: 1680px;
@@ -183,7 +183,7 @@ h3{
     }
   }  
 
-@media only screen and (min-width: 1440px) and (hover:hover) { 
+@media only screen and (min-width: 1360px) and (hover:hover) { 
 
     .figma-pro{
       min-width: 1920px;
@@ -191,7 +191,7 @@ h3{
     }
   }
 
-@media only screen and (min-width: 1600px) and (hover:hover) { 
+@media only screen and (min-width: 1560px) and (hover:hover) { 
 
     .figma-pro{
       min-width:2160px;
